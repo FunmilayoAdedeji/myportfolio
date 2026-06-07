@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Funmilayo Adedeji | Senior Data Analyst & BI Specialist</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>    
 :root{
   --bg:#0a0e14;--surface:#111720;--surface2:#161d28;--surface3:#1b2432;
@@ -329,6 +331,78 @@
     height:100%;
     border:0;
 }
+/* =========================
+   SAFE PROJECT MODAL LINK BUTTONS
+   Does not affect existing .project-btn
+========================= */
+
+.project-link-buttons{
+    display:flex;
+    gap:14px;
+    align-items:center;
+    flex-wrap:wrap;
+    margin-top:1.5rem;
+}
+
+.project-link-buttons .project-link-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:14px;
+    min-width:215px;
+    height:64px;
+    padding:0 22px 0 0;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:500;
+    line-height:1.15;
+    transition:all .3s ease;
+    overflow:hidden;
+}
+
+.project-link-buttons .project-link-icon{
+    width:64px;
+    height:64px;
+    min-width:64px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:26px;
+    font-weight:700;
+}
+
+.project-linkedin-btn{
+    background:#dce8fb;
+    color:#111720;
+}
+
+.project-linkedin-btn .project-link-icon{
+    background:#0077b5;
+}
+
+.project-github-btn{
+    background:#dff4e6;
+    color:#111720;
+}
+
+.project-github-btn .project-link-icon{
+    background:#62c447;
+}
+
+.project-link-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+}
+
+.project-linkedin-btn:hover{
+    background:#cfe0ff;
+}
+
+.project-github-btn:hover{
+    background:#c9eed6;
+}
 </style>
 </head>
 <body>
@@ -533,15 +607,37 @@ style="width:120px;height:120px;display:block;margin:0 auto 1rem;border-radius:2
                     Power BI analysis of a regional health system's 5-year patient encounters, identifying clinical performance gaps, rising cost drivers, and high-risk patient segments delivering a province-based care improvement and financial recovery strategy.
                 </p>
 
-                <div class="modal-actions">
-                    <a href="#" class="btn btn-primary">View Project Engagement</a>
-                    <a href="https://github.com/FunmilayoAdedeji/NorthLakeHealthcareProject/blob/main/README.md"
-   class="btn btn-ghost"
-   target="_blank"
-   rel="noopener noreferrer">
-   View Project on GitHub
-</a>
-                </div>
+                <div class="modal-actions project-link-buttons">
+
+    <a href="YOUR_ENGAGEMENT_LINK"
+       class="project-link-btn project-linkedin-btn"
+       target="_blank">
+
+        <span class="project-link-icon">
+            <i class="fab fa-linkedin-in"></i>
+        </span>
+
+        <span class="project-link-text">
+            View Project<br>Engagement
+        </span>
+
+    </a>
+
+    <a href="https://github.com/FunmilayoAdedeji/NorthLakeHealthcareProject/blob/main/README.md"
+       class="project-link-btn project-github-btn"
+       target="_blank">
+
+        <span class="project-link-icon">
+            <i class="fab fa-github"></i>
+        </span>
+
+        <span class="project-link-text">
+            View Project<br>on GitHub
+        </span>
+
+    </a>
+
+</div>
             </div>
 
             <div class="project-carousel">
@@ -613,15 +709,37 @@ style="width:120px;height:120px;display:block;margin:0 auto 1rem;border-radius:2
                    Power BI analysis of Magna International’s financial performance, identifying the root causes behind margin pressure and cash‑flow strain, and delivering a segment‑focused strategy to restore stability, strengthen efficiency, and rebuild executive confidence.
                 </p>
 
-                <div class="modal-actions">
-                    <a href="#" class="btn btn-primary">View Project Engagement</a>
-                   <a href="https://github.com/FunmilayoAdedeji/MagnaInternationalProject/blob/main/README.md"
-   class="btn btn-ghost"
-   target="_blank"
-   rel="noopener noreferrer">
-   View Project on GitHub
-</a>
-                </div>
+                 <div class="modal-actions project-link-buttons">
+
+    <a href="YOUR_ENGAGEMENT_LINK"
+       class="project-link-btn project-linkedin-btn"
+       target="_blank">
+
+        <span class="project-link-icon">
+            <i class="fab fa-linkedin-in"></i>
+        </span>
+
+        <span class="project-link-text">
+            View Project<br>Engagement
+        </span>
+
+    </a>
+
+    <a href="https://github.com/FunmilayoAdedeji/MagnaInternationalProject/blob/main/README.md"
+       class="project-link-btn project-github-btn"
+       target="_blank">
+
+        <span class="project-link-icon">
+            <i class="fab fa-github"></i>
+        </span>
+
+        <span class="project-link-text">
+            View Project<br>on GitHub
+        </span>
+
+    </a>
+
+</div>
             </div>
 
             <div class="project-carousel">
@@ -696,15 +814,37 @@ style="width:120px;height:120px;display:block;margin:0 auto 1rem;border-radius:2
 The project transforms raw production and downtime data into actionable insights that help reduce delays, optimize throughput, and improve scheduling accuracy.
                 </p>
 
-                <div class="modal-actions">
-                    <a href="#" class="btn btn-primary">View Project Engagement</a>
-                    <a href="https://github.com/FunmilayoAdedeji/GreenTechProject/blob/main/README.md"
-   class="btn btn-ghost"
-   target="_blank"
-   rel="noopener noreferrer">
-   View Project on GitHub
-</a>
-                </div>
+                <div class="modal-actions project-link-buttons">
+
+    <a href="YOUR_ENGAGEMENT_LINK"
+       class="project-link-btn project-linkedin-btn"
+       target="_blank">
+
+        <span class="project-link-icon">
+            <i class="fab fa-linkedin-in"></i>
+        </span>
+
+        <span class="project-link-text">
+            View Project<br>Engagement
+        </span>
+
+    </a>
+
+    <a href="https://github.com/FunmilayoAdedeji/GreenTechProject/blob/main/README.md"
+       class="project-link-btn project-github-btn"
+       target="_blank">
+
+        <span class="project-link-icon">
+            <i class="fab fa-github"></i>
+        </span>
+
+        <span class="project-link-text">
+            View Project<br>on GitHub
+        </span>
+
+    </a>
+
+</div>
             </div>
 
             <div class="project-carousel">
@@ -794,15 +934,37 @@ The project transforms raw production and downtime data into actionable insights
                     Excel analysis of streaming subscriber behaviour, content engagement drivers, revenue performance by tier, and churn trends helping leadership monitor platform health and identify opportunities to improve retention and content strategy.
                 </p>
 
-                <div class="modal-actions">
-                    <a href="#" class="btn btn-primary">View Project Engagement</a>
-                    <a href="https://github.com/FunmilayoAdedeji/StreamwaveProject/blob/main/README.md"
-   class="btn btn-ghost"
-   target="_blank"
-   rel="noopener noreferrer">
-   View Project on GitHub
-</a>
-                </div>
+                 <div class="modal-actions project-link-buttons">
+
+    <a href="YOUR_ENGAGEMENT_LINK"
+       class="project-link-btn project-linkedin-btn"
+       target="_blank">
+
+        <span class="project-link-icon">
+            <i class="fab fa-linkedin-in"></i>
+        </span>
+
+        <span class="project-link-text">
+            View Project<br>Engagement
+        </span>
+
+    </a>
+
+    <a href="https://github.com/FunmilayoAdedeji/StreamwaveProject/blob/main/README.md"
+       class="project-link-btn project-github-btn"
+       target="_blank">
+
+        <span class="project-link-icon">
+            <i class="fab fa-github"></i>
+        </span>
+
+        <span class="project-link-text">
+            View Project<br>on GitHub
+        </span>
+
+    </a>
+
+</div>
             </div>
 
             <div class="project-carousel">
